@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabajo Práctico N°5 - Ejercicio 3 - JavaScript</title>
+    <meta
+      name="description"
+      content="lista de tareas, ejercicio 3 de trabajo practico de JavaScript"
+    />
+    <meta
+      name="keywords"
+      content="DOM, BOM, JavaScript, frontend, functions, developer"
+    />
+    <meta name="author" content="Marisa Indiana Garat" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <main class="container my-2">
+      <section class="text-light text-center">
+        <h1 class="py-2 m-3">Lista de Tareas</h1>
+        <hr />
+        <p class="d-3">
+          Para agregar una tarea a la lista, ingresala en el formulario y
+          presioná 'agregar'. Podrás quitar las tareas que hayas completado
+          presionando el botón 'Quitar'.
+        </p>
+      </section>
+      <section class="container my-2 text-center" id="seccionForm">
+        <div class="bg-light p-3">
+          <form class="my-3" id="formTareas">
+            <div>
+              <input
+                type="text"
+                class="form-control my-2"
+                id="agregarTarea"
+                placeholder="Ej: Realizar Trabajo Práctico n°5"
+                minlength="4"
+                maxlength="150"
+                required
+              />
+              <button
+                class="btn btn-outline-primary"
+                type="submit"
+                id="btnAgregarTarea"
+              >
+                Agregar
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="container text-light d-none" id="parrafoListaTareas">
+        <ul class="list-group bg-light">
+        </ul>
+      </section>
+    </main>
+
+    <footer class="text-center text-light py-3">
+      <p>&copy; Todos los derechos reservados</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
